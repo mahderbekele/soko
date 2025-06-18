@@ -7,12 +7,17 @@
     font-family: itim;
     src: url(Itim-Regular.ttf);
 }
+body{
+    margin-left: -0%;
+       margin-right: -0%;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 .introduction {
+    font-family: poppins;
     position: fixed;
     background-color: rgba(101, 143, 61, 1);
     text-align: center;
@@ -280,6 +285,156 @@ html {
     line-height: 2%;
 }
 
+#testimonials {
+    background-color: #a4c778;
+    text-align: center;
+    font-family: poppins;
+    color: #000;
+    margin-top: 5%;
+    font-size: 120%;
+
+    h1 {
+        font-size: 400%;
+        color: rgba(101, 143, 61, 1);
+    }
+
+    h2 {
+        font-size: 200%;
+        margin-top: -2%;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+    align-items: first baseline;
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+.testimonial {
+    width: 20%;
+}
+
+#get-app {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: start;
+    font-size: 120%;
+    font-family: poppins;
+    margin-top: 5%;
+
+    h1 {
+        font-size: 450%;
+        font-family: itim;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        border-radius: 30px;
+        color: white;
+        padding: 0% 8%;
+    }
+}
+
+#contact {
+    background-color:  #a4c778;
+    margin-top: -12%;
+    z-index: 1;
+    position: relative;
+    right: 0;
+    left: 0;
+    font-family: poppins;
+    font-size: 120%;
+
+    input {
+        padding: 4%;
+    }
+
+    textarea {
+        padding: 15% 43.5%;
+        margin-top: 8%;
+    }
+
+    h1 {
+        color: white;
+        font-family: poppins;
+        font-size: 350%;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 250%;
+    }
+
+}
+
+.contact-us {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.name {
+    display: flex;
+    gap: 20%;
+    margin-top: 7%;
+    line-height: 1.6;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 4%;
+    line-height: 1.7;
+
+    span {
+        padding-left: 10%;
+    }
+}
+
+#send-now {
+    padding: 2% 12%;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 6%;
+    font-size: 120%;
+    font-family: poppins;
+}
+
+#send-now :hover {
+    background-color: rgba(101, 143, 61, 1);
+
+}
+
+#copyright {
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    background-color: rgba(101, 143, 61, 1);
+    font-size: 120%;
+}
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -444,6 +599,124 @@ html {
         width: 90%;
 
     }
+        #testimonials {
+        padding: 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .testimonial {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding: 0 1rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    #get-app {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 100%;
+        text-align: center;
+
+        img {
+            width: 90%;
+            height: 90%;
+            margin-top: 5%;
+        }
+
+        width:100%;
+
+        h1 {
+            font-size: 250%;
+        }
+
+        button {
+            padding: 0% 2%;
+            font-size: small;
+            margin-left: 25%;
+        }
+    }
+
+    #contact {
+        margin-top: -50%;
+        width: 100%;
+        font-size: 100%;
+
+        input {
+            padding: 2%;
+            width: 90%;
+        }
+
+        textarea {
+            padding: 13% 23%;
+            margin-top: 8%;
+        }
+
+        h1 {
+            font-size: 250%;
+        }
+
+        h2 {
+            font-size: 150%;
+            text-align: center;
+        }
+    }
+
+    .contact-us {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-info {
+        padding: 3% 3% 3% 7%;
+
+        span {
+            padding-left: 10%;
+        }
+    }
+
+    #send-now {
+        padding: 2% 5%;
+        border-radius: 15px;
+        margin-top: 6%;
+        font-size: 100%;
+        margin-left: 35%;
+        margin-bottom: 5%;
+    }
+
+    #copyright {
+        text-align: center;
+        color: white;
+        padding: 4% 2% 1%;
+        font-size: 80%;
+    }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 999px) {
@@ -589,6 +862,113 @@ html {
         flex-wrap: wrap;
         width: 90%;
     }
+        #testimonials {
+        padding: 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .testimonial-grid {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .testimonial {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+
+        img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            padding: 0 1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+    }
+    #get-app {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 120%;
+        text-align: center;
+
+        img {
+            width: 90%;
+            height: 90%;
+            margin-top: 5%;
+        }
+
+        width:100%;
+
+        h1 {
+            font-size: 280%;
+        }
+
+        button {
+            padding: 0% 2%;
+            font-size: small;
+            margin-left: 25%;
+        }
+    }
+    #contact {
+        margin-top: -50%;
+        width: 100%;
+        font-size: 1.6rem;
+        input {
+            padding: 2%;
+            width: 90%;
+        }
+        textarea {
+            padding: 13% 35%;
+            margin-top: 8%;
+        }
+        h1 {
+            font-size: 280%;
+        }
+        h2 {
+            font-size: 180%;
+            text-align: center;
+        }
+    }
+    .contact-us {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact-info {
+        padding: 3% 3% 3% 7%;
+
+        span {
+            padding-left: 10%;
+        }
+    }
+    #send-now {
+        padding: 2% 5%;
+        border-radius: 15px;
+        margin-top: 6%;
+        font-size: 120%;
+        margin-left: 35%;
+        margin-bottom: 5%;
+    }
+    #copyright {
+        text-align: center;
+        color: white;
+        padding: 4% 2% 1%;
+        font-size: 1.2rem;
+    }
+
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
@@ -733,4 +1113,112 @@ html {
         flex-wrap: wrap;
         width: 90%;
     }
+
+    #testimonials {
+        padding: 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .testimonial-grid {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .testimonial {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+
+        img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            padding: 0 1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+    }
+    #get-app {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 120%;
+        text-align: center;
+
+        img {
+            width: 90%;
+            height: 90%;
+            margin-top: 5%;
+        }
+
+        width:100%;
+
+        h1 {
+            font-size: 280%;
+        }
+
+        button {
+            padding: 0% 2%;
+            font-size: small;
+            margin-left: 25%;
+        }
+    }
+    #contact {
+        margin-top: -50%;
+        width: 100%;
+        font-size: 1.6rem;
+        input {
+            padding: 2%;
+            width: 90%;
+        }
+        textarea {
+            padding: 13% 35%;
+            margin-top: 8%;
+        }
+        h1 {
+            font-size: 280%;
+        }
+        h2 {
+            font-size: 180%;
+            text-align: center;
+        }
+    }
+    .contact-us {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact-info {
+        padding: 3% 3% 3% 7%;
+
+        span {
+            padding-left: 10%;
+        }
+    }
+    #send-now {
+        padding: 2% 5%;
+        border-radius: 15px;
+        margin-top: 6%;
+        font-size: 120%;
+        margin-left: 35%;
+        margin-bottom: 5%;
+    }
+    #copyright {
+        text-align: center;
+        color: white;
+        padding: 4% 2% 1%;
+        font-size: 1.2rem;
+    }
+
 }
